@@ -16,6 +16,13 @@ xui(){
 xr(){
 /etc/rc7.d/jb/dnsjp
 }
+xr1(){
+rm -rf /etc/resolv.conf && echo 'nameserver 8.8.8.8'>/etc/resolv.conf
+clear
+echo "已复原谷歌DNS"
+read -p "回车检测Netfix（ctrl+C 退出）"
+nf
+}
 #开始菜单
 main(){
 root_need
@@ -27,8 +34,9 @@ echo -e "${Green}       1、劫持-HK ${Font}"
 echo -e "${Green}       2、劫持-SG ${Font}"
 echo -e "${Green}       3、劫持-SG-1 ${Font}"
 echo -e "${Green}       4、劫持-JP ${Font}"
+echo -e "${Green}       5、复原DNS ${Font}"
 echo -e "———————————————————————————————————————"
-read -p "请输入数字 [1-4]:" num
+read -p "请输入数字 [1-5]:" num
 case "$num" in
     1)
     jk
@@ -41,10 +49,13 @@ case "$num" in
     ;;
     4)
     xr
-    ;;    
+    ;;
+    5)
+    xr1
+    ;; 
     *)
     clear
-     echo -e "${Green}请输入正确数字 [1-4]${Font}"
+     echo -e "${Green}请输入正确数字 [1-5]${Font}"
     main
     ;;
     esac
