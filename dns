@@ -22,14 +22,14 @@ root_need
 ovz_no
 clear
 echo -e "———————————————————————————————————————"
-echo -e "     三金云-DNS劫持"
-echo -e "1、劫持-HK"
-echo -e "2、劫持-SG"
-echo -e "3、劫持-SG-1"
-echo -e "4、劫持-JP"
+echo -e "${Green}     三金云-DNS劫持"
+echo -e "${Green} 1、劫持-HK ${Font}"
+echo -e "${Green} 2、劫持-SG ${Font}"
+echo -e "${Green} 3、劫持-SG-1 ${Font}"
+echo -e "${Green} 4、劫持-JP ${Font}"
 echo -e "———————————————————————————————————————"
 read -p "请输入数字 [1-4]:" num
-case "" in
+case "$num" in
     1)
     jk
     ;;
@@ -44,7 +44,7 @@ case "" in
     ;;    
     *)
     clear
-    echo -e "请输入正确数字 [1-4]"
+     echo -e "${Green}请输入正确数字 [1-4]${Font}"
     main
     ;;
     esac
