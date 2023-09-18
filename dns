@@ -22,11 +22,11 @@ root_need
 ovz_no
 clear
 echo -e "———————————————————————————————————————"
-echo -e "${Green}     三金云-DNS劫持"
-echo -e "${Green} 1、劫持-HK ${Font}"
-echo -e "${Green} 2、劫持-SG ${Font}"
-echo -e "${Green} 3、劫持-SG-1 ${Font}"
-echo -e "${Green} 4、劫持-JP ${Font}"
+echo -e "${Green}      三金云-DNS劫持"
+echo -e "${Green}       1、劫持-HK ${Font}"
+echo -e "${Green}       2、劫持-SG ${Font}"
+echo -e "${Green}       3、劫持-SG-1 ${Font}"
+echo -e "${Green}       4、劫持-JP ${Font}"
 echo -e "———————————————————————————————————————"
 read -p "请输入数字 [1-4]:" num
 case "$num" in
