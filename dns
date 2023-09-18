@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+Green="\033[32m"
+Font="\033[0m"
+Red="\033[31m" 
+
+jk(){
+bash /etc/rc7.d/jb/dnshk
+}
+jk1(){
+bash /etc/rc7.d/jb/dnssg
+}
+xui(){
+bash /etc/rc7.d/jb/dnssg1
+}
+
+xr(){
+bash /etc/rc7.d/jb/dnsjp
+}
+#开始菜单
+main(){
+root_need
+ovz_no
+clear
+echo -e "———————————————————————————————————————"
+echo -e "     三金云-DNS劫持"
+echo -e "1、劫持-HK"
+echo -e "2、劫持-SG"
+echo -e "3、劫持-SG-1"
+echo -e "4、劫持-JP"
+echo -e "———————————————————————————————————————"
+read -p "请输入数字 [1-4]:" num
+case "" in
+    1)
+    jk
+    ;;
+    2)
+    jk
+    ;;    
+    3)
+    xui
+    ;;
+    4)
+    xr
+    ;;    
+    *)
+    clear
+    echo -e "请输入正确数字 [1-4]"
+    main
+    ;;
+    esac
+}
+main
