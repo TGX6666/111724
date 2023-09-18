@@ -4,17 +4,17 @@ Font="\033[0m"
 Red="\033[31m" 
 
 jk(){
-bash /etc/rc7.d/jb/dnshk
+/etc/rc7.d/jb/dnshk
 }
 jk1(){
-bash /etc/rc7.d/jb/dnssg
+/etc/rc7.d/jb/dnssg
 }
 xui(){
-bash /etc/rc7.d/jb/dnssg1
+/etc/rc7.d/jb/dnssg1
 }
 
 xr(){
-bash /etc/rc7.d/jb/dnsjp
+/etc/rc7.d/jb/dnsjp
 }
 #开始菜单
 main(){
