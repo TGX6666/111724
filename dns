@@ -7,22 +7,30 @@ jk(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
 cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json 
+
+echo "现在Xrayr已分流劫持HK"
 }
 jk1(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
 cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.148"/g' /etc/rc7.d/xrayr/dns.json 
+echo "现在Xrayr已分流劫持SG"
+
 }
 xui(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
 cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.144"/g' /etc/rc7.d/xrayr/dns.json 
+echo "现在Xrayr已分流劫持SG"
+
 }
 
 xr(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
 cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.136.122"/g' /etc/rc7.d/xrayr/dns.json 
+echo "现在Xrayr已分流劫持JP"
+
 }
 xr1(){
 rm -rf /etc/resolv.conf && echo 'nameserver 8.8.8.8'>/etc/resolv.conf
@@ -31,6 +39,17 @@ echo "已复原DNS 8.8.8.8"
 read -p "回车检测Netfix（ctrl+C 退出）"
 nf
 }
+xr11(){
+echo "DNS-HK 38.207.142.245"
+
+echo "DNS-SG 38.181.73.144"
+
+echo "DNS-SG1 38.181.73.148"
+
+echo "DNS-JP 38.207.136.122"
+echo "以上是提供的DNS解锁的IP，分流配置文件：https://1z345.gitbook.io/server/xray-pei-zhi-fang-fa"
+echo "自己修改配置中的劫持IP即可"
+}
 #开始菜单
 main(){
 root_need
@@ -38,13 +57,14 @@ ovz_no
 clear
 echo -e "———————————————————————————————————————"
 echo -e "${Green}      三金云-DNS劫持"
-echo -e "${Green}       1、劫持-HK ${Font}"
-echo -e "${Green}       2、劫持-SG ${Font}"
-echo -e "${Green}       3、劫持-SG-1 ${Font}"
-echo -e "${Green}       4、劫持-JP ${Font}"
+echo -e "${Green}       1、xrayr劫持-HK ${Font}"
+echo -e "${Green}       2、xrayr劫持-SG ${Font}"
+echo -e "${Green}       3、xrayr劫持-SG-1 ${Font}"
+echo -e "${Green}       4、xrayr劫持-JP ${Font}"
 echo -e "${Green}       5、复原DNS ${Font}"
+echo -e "${Green}       6、XUI劫持 ${Font}"
 echo -e "———————————————————————————————————————"
-read -p "请输入数字 [1-5]:" num
+read -p "请输入数字 [1-6]:" num
 case "$num" in
     1)
     jk
@@ -61,9 +81,11 @@ case "$num" in
     5)
     xr1
     ;; 
+    xr11
+    ;; 
     *)
     clear
-     echo -e "${Green}请输入正确数字 [1-5]${Font}"
+     echo -e "${Green}请输入正确数字 [1-6]${Font}"
     main
     ;;
     esac
