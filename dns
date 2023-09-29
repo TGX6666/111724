@@ -39,7 +39,7 @@ echo "已复原DNS 8.8.8.8"
 read -p "回车检测Netfix（ctrl+C 退出）"
 nf
 }
-x1(){
+xr11(){
 echo "DNS-HK 38.207.142.245"
 echo "DNS-SG 38.181.73.144"
 echo "DNS-SG1 38.181.73.148"
@@ -68,7 +68,7 @@ case "$num" in
     jk
     ;;
     2)
-    jk
+    jk1
     ;;    
     3)
     xui
@@ -80,7 +80,7 @@ case "$num" in
     xr1
     ;; 
     6）
-    x1
+    xr11
     ;; 
     *)
     clear
