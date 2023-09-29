@@ -39,13 +39,10 @@ echo "已复原DNS 8.8.8.8"
 read -p "回车检测Netfix（ctrl+C 退出）"
 nf
 }
-xr11(){
+x1(){
 echo "DNS-HK 38.207.142.245"
-
 echo "DNS-SG 38.181.73.144"
-
 echo "DNS-SG1 38.181.73.148"
-
 echo "DNS-JP 38.207.136.122"
 echo "以上是提供的DNS解锁的IP，分流配置文件：https://1z345.gitbook.io/server/xray-pei-zhi-fang-fa"
 echo "自己修改配置中的劫持IP即可"
@@ -82,7 +79,7 @@ case "$num" in
     xr1
     ;; 
     6）
-    xr11
+    x1
     ;; 
     *)
     clear
