@@ -4,22 +4,30 @@ Font="\033[0m"
 Red="\033[31m" 
 
 jk(){
-/etc/rc7.d/jb/dnshk
+rm -rf /etc/rc7.d/xrayr/dns.json 
+cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
+sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json 
 }
 jk1(){
-/etc/rc7.d/jb/dnssg
+rm -rf /etc/rc7.d/xrayr/dns.json 
+cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
+sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.148"/g' /etc/rc7.d/xrayr/dns.json 
 }
 xui(){
-/etc/rc7.d/jb/dnssg1
+rm -rf /etc/rc7.d/xrayr/dns.json 
+cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
+sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.144"/g' /etc/rc7.d/xrayr/dns.json 
 }
 
 xr(){
-/etc/rc7.d/jb/dnsjp
+rm -rf /etc/rc7.d/xrayr/dns.json 
+cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
+sed -i 's/"address": "8.8.8.8"/"address": "38.207.136.122"/g' /etc/rc7.d/xrayr/dns.json 
 }
 xr1(){
 rm -rf /etc/resolv.conf && echo 'nameserver 8.8.8.8'>/etc/resolv.conf
 clear
-echo "已复原谷歌DNS"
+echo "已复原DNS 8.8.8.8"
 read -p "回车检测Netfix（ctrl+C 退出）"
 nf
 }
