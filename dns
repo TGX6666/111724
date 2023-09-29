@@ -54,7 +54,6 @@ ovz_no
 clear
 echo -e "———————————————————————————————————————"
 echo -e "${Green}          三金云-DNS劫持"
-echo -e ""
 echo -e "${Green}       1、xrayr劫持-HK ${Font}"
 echo -e "${Green}       2、xrayr劫持-SG ${Font}"
 echo -e "${Green}       3、xrayr劫持-SG-1 ${Font}"
