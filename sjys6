@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+systemctl status xr1.service
+systemctl restart xr1.service
+
+echo "成功重启xrayr,如果节点不在线请检查配置文件"
