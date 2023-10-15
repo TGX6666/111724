@@ -9,7 +9,8 @@ wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
-sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc/rc7.d/xrayr\/dns.json/' /root/tar.yml
+cp /root/tar.yml /root/tar_backup.yml
+sed -i 's/DnsConfigPath:.*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root/tar.yml
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 
@@ -23,7 +24,7 @@ rm -rf /etc/rc7.d/xrayr/dns.json
 wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
-sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc/rc7.d/xrayr\/dns.json/' /root/tar.yml
+sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root/tar.yml
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.148"/g' /etc/rc7.d/xrayr/dns.json 
@@ -35,7 +36,7 @@ rm -rf /etc/rc7.d/xrayr/dns.json
 wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
-sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc/rc7.d/xrayr\/dns.json/' /root/tar.yml
+sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root/tar.yml
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.144"/g' /etc/rc7.d/xrayr/dns.json 
@@ -48,7 +49,7 @@ rm -rf /etc/rc7.d/xrayr/dns.json
 wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
-sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc/rc7.d/xrayr\/dns.json/' /root/tar.yml
+sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root/tar.yml
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.136.122"/g' /etc/rc7.d/xrayr/dns.json 
