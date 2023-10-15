@@ -6,9 +6,9 @@ Red="\033[31m"
 jk(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
 wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
-
-sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json 
-
+sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json
+rm -rf /root/tar.yml
+cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/sri\/dns.json/' /root/tar.yml
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
@@ -20,6 +20,8 @@ echo "现在Xrayr已分流劫持HK"
 jk1(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
 wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
+rm -rf /root/tar.yml
+cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/sri\/dns.json/' /root/tar.yml
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
@@ -30,6 +32,8 @@ echo "现在Xrayr已分流劫持SG"
 xui(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
 wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
+rm -rf /root/tar.yml
+cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/sri\/dns.json/' /root/tar.yml
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
@@ -41,6 +45,8 @@ echo "现在Xrayr已分流劫持SG"
 xr(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
 wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
+rm -rf /root/tar.yml
+cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/sri\/dns.json/' /root/tar.yml
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
@@ -65,6 +71,7 @@ echo "自己修改配置中的劫持IP即可"
 }
 #开始菜单
 main(){
+cp /root/tar.yml /root/tar1.yml
 root_need
 ovz_no
 clear
