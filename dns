@@ -71,7 +71,7 @@ echo "自己修改配置中的劫持IP即可"
 }
 #开始菜单
 main(){
-cp /root/tar.yml /root/tar1.yml
+[ ! -f "tar1.yml" ] && cp "/root/tar.yml" "/root/tar1.yml"
 root_need
 ovz_no
 clear
