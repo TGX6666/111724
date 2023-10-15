@@ -5,7 +5,7 @@ Red="\033[31m"
 
 jk(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
+wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
@@ -16,10 +16,11 @@ sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json 
 
 echo "现在Xrayr已分流劫持HK"
+xr
 }
 jk1(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
+wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/sri\/dns.json/' /root/tar.yml
@@ -27,11 +28,11 @@ sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.148"/g' /etc/rc7.d/xrayr/dns.json 
 echo "现在Xrayr已分流劫持SG"
-
+xr
 }
 xui(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
+wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/sri\/dns.json/' /root/tar.yml
@@ -39,12 +40,12 @@ sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.144"/g' /etc/rc7.d/xrayr/dns.json 
 echo "现在Xrayr已分流劫持SG"
-
+xr
 }
 
 xr(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
+wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/sri\/dns.json/' /root/tar.yml
@@ -52,7 +53,7 @@ sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.136.122"/g' /etc/rc7.d/xrayr/dns.json 
 echo "现在Xrayr已分流劫持JP"
-
+xr
 }
 xr1(){
 rm -rf /etc/resolv.conf && echo 'nameserver 8.8.8.8'>/etc/resolv.conf
