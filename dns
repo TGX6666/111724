@@ -13,10 +13,9 @@ cp /root/tar.yml /root/tar_backup.yml
 sed -i 's/DnsConfigPath:.*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root/tar.yml
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
-
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json 
-
-echo "现在Xrayr已分流劫持HK"
+pkill tar > /dev/null 2>&1 
+echo "劫持HK成功"
 echo "现在 xr 回车即可生效"
 }
 jk1(){
@@ -28,7 +27,8 @@ sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.148"/g' /etc/rc7.d/xrayr/dns.json 
-echo "现在Xrayr已分流劫持SG"
+pkill tar > /dev/null 2>&1 
+echo "劫持SG成功"
 echo "现在 xr 回车即可生效"
 }
 xui(){
@@ -40,7 +40,8 @@ sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.144"/g' /etc/rc7.d/xrayr/dns.json 
-echo "现在Xrayr已分流劫持SG"
+pkill tar > /dev/null 2>&1 
+echo "劫持SG成功"
 echo "现在 xr 回车即可生效"
 }
 
@@ -53,7 +54,8 @@ sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root
 sed -i 's/EnableDNS: .*/EnableDNS: true/' /root/tar.yml
 sed -i 's/DNSType: .*/DNSType: UseIP/' /root/tar.yml
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.136.122"/g' /etc/rc7.d/xrayr/dns.json 
-echo "现在Xrayr已分流劫持JP"
+pkill tar > /dev/null 2>&1 
+echo "劫持JP成功"
 echo "现在 xr 回车即可生效"
 }
 xr1(){
