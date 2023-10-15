@@ -5,21 +5,21 @@ Red="\033[31m"
 
 jk(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
+wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json 
 
 echo "现在Xrayr已分流劫持HK"
 }
 jk1(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
+wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.148"/g' /etc/rc7.d/xrayr/dns.json 
 echo "现在Xrayr已分流劫持SG"
 
 }
 xui(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
+wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
 sed -i 's/"address": "8.8.8.8"/"address": "38.181.73.144"/g' /etc/rc7.d/xrayr/dns.json 
 echo "现在Xrayr已分流劫持SG"
 
@@ -27,7 +27,7 @@ echo "现在Xrayr已分流劫持SG"
 
 xr(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-cp /etc/rc7.d/dns.json /etc/rc7.d/xrayr/dns.json 
+wget https://raw.githubusercontent.com/TGX6666/111724/main/dns.json
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.136.122"/g' /etc/rc7.d/xrayr/dns.json 
 echo "现在Xrayr已分流劫持JP"
 
