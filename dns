@@ -5,7 +5,7 @@ Red="\033[31m"
 
 jk(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-wget -O /etc/rc7.d/xrayr/ https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
+wget -O /etc/rc7.d/xrayr/dns.json https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 sed -i 's/"address": "8.8.8.8"/"address": "38.207.142.245"/g' /etc/rc7.d/xrayr/dns.json
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
@@ -21,7 +21,7 @@ echo "现在 xr 回车即可生效"
 }
 jk1(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-wget -O /etc/rc7.d/xrayr/ https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
+wget -O /etc/rc7.d/xrayr/dns.json https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root/tar.yml
@@ -33,7 +33,7 @@ echo "现在 xr 回车即可生效"
 }
 xui(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-wget -O /etc/rc7.d/xrayr/ https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
+wget -O /etc/rc7.d/xrayr/dns.json https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root/tar.yml
@@ -46,7 +46,7 @@ echo "现在 xr 回车即可生效"
 
 xr(){
 rm -rf /etc/rc7.d/xrayr/dns.json 
-wget -O /etc/rc7.d/xrayr/ https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
+wget -O /etc/rc7.d/xrayr/dns.json https://raw.githubusercontent.com/TGX6666/111724/main/dns.json  > /dev/null 2>&1 
 rm -rf /root/tar.yml
 cp /root/tar1.yml /root/tar.yml
 sed -i 's/DnsConfigPath: .*/DnsConfigPath: \/etc\/rc7.d\/xrayr\/dns.json/' /root/tar.yml
